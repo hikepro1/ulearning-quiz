@@ -36,7 +36,7 @@ def check_answers(json_file_path):
             
             if choice_items and len(choice_items) >= 4:
                 # 将ABCD映射到选项
-                option_mapping = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+                option_mapping = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
                 
                 if answer_content in option_mapping:
                     option_index = option_mapping[answer_content]
@@ -63,4 +63,5 @@ def check_answers(json_file_path):
 # 使用示例
 if __name__ == "__main__":
     json_file_path = "示例文件.json"
+
     check_answers(json_file_path)
