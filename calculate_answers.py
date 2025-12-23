@@ -36,7 +36,7 @@ def evaluate_formula(formula, var_dict):
     formula = formula.replace('^', '**')
     
     try:
-        # 使用 eval 计算结果，注意安全风险，此处数据来自受信文件
+        # 使用 eval 计算结果
         result = eval(formula, {"__builtins__": {}}, {"math": math})
         return result
     except Exception as e:
